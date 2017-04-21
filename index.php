@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'partials/header.php'; ?>
 
 	
 	<article class="content container">
@@ -16,8 +16,8 @@
 			Much like the wings of a butterfly, your butt might change history.
 		</p>
 
-		<img src="img/marvel-yellow.png" class="bigass" alt="ms marvel">
+		<img src="assets/img/marvel-yellow.png" class="bigass" alt="ms marvel">
 	</article>
 
 
-<?php include 'footer.php'; ?>
+<?php include 'partials/footer.php'; ?>

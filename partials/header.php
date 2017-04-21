@@ -13,7 +13,7 @@
 	<title><?php echo ucfirst($page_name) ?> / Kickass Website</title>
 	
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="<?php echo $page_name ?>">
 
@@ -21,6 +21,9 @@
 		<nav class="container">
 			<ul class="menu">
 			<?php
+				
+				print_r( glob('*.php') );
+				/*
 				if ($page_name =='home') echo '<li><strong>Home</strong></li>';
 				else echo '<li><a href="index.php">Home</a></li>';
 
@@ -32,7 +35,7 @@
 				
 				if ($page_name =='contact') echo '<li><strong>Contact</strong></li>';
 				else echo '<li><a href="contact.php">Contact</a></li>';
-				
+				*/
 			?>
 			</ul>
 		</nav>
