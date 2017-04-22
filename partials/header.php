@@ -22,20 +22,20 @@
 			<ul class="menu">
 			<?php
 				
-				print_r( glob('*.php') );
-				/*
-				if ($page_name =='home') echo '<li><strong>Home</strong></li>';
-				else echo '<li><a href="index.php">Home</a></li>';
+				$pages = glob('*.php');
+				$pages = array_reverse($pages);
+				//print_r($pages);
 
-				if ($page_name =='gallery') echo '<li><strong>Gallery</strong></li>';
-				else echo '<li><a href="gallery.php">Gallery</a></li>';
+				foreach( $pages as $file ) {
+					$page = basename($file, '.php');
 
-				if ($page_name =='blog') echo '<li><strong>Blog</strong></li>';
-				else echo '<li><a href="blog.php">Blog</a></li>';
+					if ($page == 'index') $page = 'home';
 				
-				if ($page_name =='contact') echo '<li><strong>Contact</strong></li>';
-				else echo '<li><a href="contact.php">Contact</a></li>';
-				*/
+					if ($page_name == $page) echo '<li><strong>'. ucfirst($page) .'</strong></li>';
+					else echo '<li><a href="'. $file .'">'. ucfirst($page) .'</a></li>';
+				
+				}
+
 			?>
 			</ul>
 		</nav>
