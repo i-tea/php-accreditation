@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Nightfury</title>
-
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin,latin-ext">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<script src="js/jquery-2.1.1.min.js"></script>
-	<!--[if lt IE 9]>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-
+<?php include 'partials/header.php' ?>
 	<header>
 		<div class="contact-bar">
 			<div class="container">
@@ -65,13 +46,7 @@
 
 					<h2 class="text-center">Toto je veta, ktorá je tu napísaná, ktorá má hovoriť o tom, ako veľmi sme šikovní sme v našom portfóliovaní a tvorbe vecí, ktoré tvoríme a taktiež vyrábame.</h2>
 
-					<ul class="menu controls">
-						<li data-from="left"><a href="index.html">Všetko</a></li>
-						<li data-from="right" class="selected"><a href="#web">Web</a></li>
-						<li data-from="left"><a href="branding.html">Branding</a></li>
-						<li data-from="right"><a href="fotografia.html">Fotografia</a></li>
-						<li data-from="left"><a href="video.html">Video</a></li>
-					</ul>
+					<?php include 'partials/menu-portfolio.php' ?>
 
 				</div>
 
@@ -117,26 +92,4 @@
 			</ul>
 		</div>
 	</aside>
-
-	<footer>
-		<div class="container">
-			<p class="logo">
-				<strong>NIGHT</strong>FURY<i class="fa fa-fire"></i>
-			</p>
-			<p class="author">
-				Návrh a design pripravil <a href="mailto:tomas@cloudfender.com">tomas@cloudfender.com</a>
-			</p>
-			<ul class="menu nav-footer">
-				<li><a href="index.html">Domov</a></li>
-				<li><a href="portfolio.html">Portfólio</a></li>
-				<li><a href="about.html">O nás</a></li>
-				<li><a href="contact.html">Kontakt</a></li>
-			</ul>
-		</div>
-	</footer>
-
-	<!-- scripts -->
-	<script src="js/lightbox.js"></script>
-
-</body>
-</html>
+<?php include 'partials/footer.php' ?>
