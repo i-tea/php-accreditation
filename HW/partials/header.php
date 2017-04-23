@@ -7,7 +7,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Nightfury</title>
+	<title><?php echo ucfirst($page_name)?> / Nightfury</title>
 
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&amp;subset=latin,latin-ext">
 	<link rel="stylesheet" href="./css/font-awesome.css">
