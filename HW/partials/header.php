@@ -1,6 +1,6 @@
 <?php 
-    $page_name = basename($_SERVER['SCRIPT_NAME'], '.php');
-    print_r($page_name);
+    $page_name = basename($_SERVER["SCRIPT_NAME"], ".php");
+    if ($page_name == "index") $page_name = "všetko";
 ?>
 
 <!DOCTYPE html>
